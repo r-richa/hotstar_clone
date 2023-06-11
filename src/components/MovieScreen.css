@@ -1,0 +1,47 @@
+.poster img{
+    height: 550px;
+    display: flex;
+    padding: 1rem;
+    background-image: linear-gradient(rgb(0,0,0) rgb(0,0,1));
+    opacity: 1;
+    transition: opacity 0.3s;
+    
+}
+.posterlist{
+    display: flex;
+    margin: 1rem;
+    justify-content: center;
+
+}
+.posterlist img{
+    height: 150px;
+    padding: 0.4rem;
+    align-self: center;
+
+}
+.moviescreen{
+    margin: 0;
+}
+.moviescreen_header{
+    margin: 130px;
+}
+.poster{
+    position: relative;
+}
+.poster .title{
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+}
+.poster .ptitle{
+    font-size: 40px;
+    font-weight: bold;
+}
+.poster p{
+    color: white;
+    font-size: 20px;
+    font-family: cursive;
+}
+h1{
+    color: rgb(218, 238, 241);
+}

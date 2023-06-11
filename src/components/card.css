@@ -1,0 +1,17 @@
+.card{
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+    margin: 2px;
+    padding: 0.4rem;
+    justify-content: space-between;
+    
+}
+.card-body{
+    padding: 0.4rem;
+    justify-content: space-between;
+    background-color: rgb(3, 3, 54);
+    margin: 1rem;
+    border-radius: 2px;
+
+}

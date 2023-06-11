@@ -1,0 +1,16 @@
+.sidebar{
+    width: 50px;
+    height: 600px;
+    padding: 0.4rem;
+    align-items: center;
+    top: 400px;
+    float: left;
+    margin: 0;
+}
+.sidebar img{
+    width: 25px;
+    padding-top: 2rem;
+    margin: 10px;
+    top: 100px;
+    
+}

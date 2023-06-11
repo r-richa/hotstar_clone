@@ -1,0 +1,22 @@
+.footer{
+    bottom: 0;
+    margin: 30px;
+}
+.footerbox{
+    display: flex;
+    justify-content: space-between;
+}
+.links p{
+    margin-top: 1rem;
+    font-size: 13px;
+    color: rgb(224, 211, 243);
+}
+.footer .endtext{
+    margin-top: 2rem;
+    font-size: 13px;
+    color: rgb(224, 211, 243);    
+}
+.links img{
+    width: 40px;
+    height: 40px;
+}

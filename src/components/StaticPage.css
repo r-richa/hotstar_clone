@@ -1,0 +1,42 @@
+.staticpage .bg{
+    width: 100%;
+}
+.staticpage .over{
+    position: absolute;
+    top: 20%;
+    left: 7%;
+}
+.staticpage .buttonlist{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    width: 35%;
+}
+.staticpage .title{
+    width: 45%;
+}
+.buttonlist button{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-right: 1rem;
+
+
+}
+.play{
+    background-color: rgb(136, 215, 244);
+    color: rgb(1, 8, 28);
+}
+.plus{
+    border-radius: 60%;
+}
+.up{
+    font-size: 13px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.staticpage .down{
+    width: 55%;
+    font-size: 16px;
+}
