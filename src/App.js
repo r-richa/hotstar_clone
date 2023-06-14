@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import HomeScreen from './components/HomeScreen';
 import LandScreen from './components/LandScreen';
 import MovieScreen from './components/MovieScreen';
-import Sidebar from './components/Sidebar';
+import LoginPage from './components/LoginPage'
 import StaticPage from './components/StaticPage';
 
 function App() {
@@ -14,12 +14,13 @@ function App() {
       <Router>
         <Header />
         <div className='page'>
-        <Sidebar />
+        {/* <Sidebar /> */}
         <Routes className='content'>
           <Route path='/' element={<LandScreen />}/>
           <Route path='/home' element={<HomeScreen />}/>
           <Route path='/home/movie' element={<MovieScreen />}/>
           <Route path='/home/static' element={<StaticPage />}/>
+          <Route path='/login' element={<LoginPage />}/>
 
         </Routes>
         </div>

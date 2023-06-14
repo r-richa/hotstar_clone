@@ -9,12 +9,15 @@ import pic2 from './pic2.png';
 import pic3 from './pic3.png';
 import pic4 from './pic4.jpg';
 import pic5 from './pic5.png';
+import Sidebar from "./Sidebar";
 
 const MovieScreen = () => {
         
     console.log(data);
     return (
         <div className="moviescreen">
+            <Sidebar />
+            <div className="moviescreen_body">
             <div className="moviescreen__header">
                 <Carousel
                     autoPlay = {true}
@@ -51,9 +54,10 @@ const MovieScreen = () => {
             <h1>Recommended for you</h1>
                 <div className="listcard">
                     {
-                        <Card movie = {data.filter((movie) => movie.type == 'recommend')} title = {'popular'} />
+                        <Card movie = {data.filter((movie) => movie.type == 'recommend')} />
                     }
                 </div>
+            </div>
             </div>
 
         </div>

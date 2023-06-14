@@ -1,5 +1,13 @@
+.staticwhole{
+    display: flex;
+    width: 100%;
+}
+.staticpage{
+    width: 100%;
+}
 .staticpage .bg{
     width: 100%;
+    margin: 0;
 }
 .staticpage .over{
     position: absolute;

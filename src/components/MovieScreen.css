@@ -21,6 +21,10 @@
 }
 .moviescreen{
     margin: 0;
+    display: flex;
+}
+.moviescreen Sidebar{
+    float: left;
 }
 .moviescreen_header{
     margin: 130px;
