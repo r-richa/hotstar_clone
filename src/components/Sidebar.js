@@ -8,9 +8,9 @@ import movieicon from './movie.png';
 const Sidebar = () => {
     return (
         <div className="sidebar">
-            <Link to='/home/static' ><img src ={searchicon} /></Link>
+            <Link to='/favourite' ><img src ={searchicon} /></Link>
             <Link to='/home' ><img src ={homeicon} /></Link>
-            <Link to='/home/movie' ><img src ={movieicon} /></Link>
+            <Link to='/movie' ><img src ={movieicon} /></Link>
             
         </div>
     )

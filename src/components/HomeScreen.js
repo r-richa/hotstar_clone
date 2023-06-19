@@ -1,6 +1,6 @@
 import React from "react";
 import './HomeScreen.css';
-import data from './data.json';
+import data from './movie.json';
 import Card from "./card";
 import Sidebar from "./Sidebar";
 

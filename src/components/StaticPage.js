@@ -1,25 +1,44 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import './StaticPage.css';
-import incrediblebg from './incrediblebg.jpg';
-import title from './incredible.png';
 import Sidebar from "./Sidebar";
-
+import { useParams } from "react-router-dom";
+import data from './movie.json';
 
 const StaticPage = () => {
+    const[movie, setMovie] = useState({});
+    const{id} = useParams();
+    useEffect(() => {
+        setMovie(data.filter((movie) => movie.id == id)[0])
+    },[]);
+
+    const favourite = (movie) => {
+        console.log(movie.favourite);
+        if(!movie.favourite){
+            movie.favourite = 1;
+            setActive(true);
+        }else{
+            movie.favourite = 0;
+            setActive(false);
+        }
+    };
+
+    const[active ,setActive] = useState(false);
+    
+    
     return(
         <div className="staticwhole">
              <Sidebar />
         <div className="staticpage">
-                <img src ={incrediblebg} className="bg"/>
+                <img src = {movie.backgroundImg} className="bg"/>
                 <div className="over">
-                    <img src ={ title} className="title"/>
+                    <img src ={movie.titleImg} className="title"/>
                     <div className="buttonlist">
-                        <button className="play">PLAY</button>
-                        <button className="trailer">TRAILER</button>
-                        <button className="plus">+</button>
+                        <button className="button play">PLAY</button>
+                        <button className="button trailer">TRAILER</button>
+                        <button className="plus" onClick = {() =>{favourite(movie)}} style={{backgroundColor: active? "gold" : "white"}}>&#9733;</button>
                     </div>
-                    <p className="up">2018 ‧ Family/Adventure ‧ 1h 58m</p>
-                    <p className="down">Entrusted with a task to restore public faith in superheroes, Helen sets off on a mission to catch a supervillain, while Bob faces the challenges of stay-at-home parenting</p>
+                    <p className="up">{movie.subTitle}</p>
+                    <p className="down">{movie.description}</p>
 
                 </div>
         </div>

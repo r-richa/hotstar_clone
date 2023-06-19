@@ -7,6 +7,7 @@ import LandScreen from './components/LandScreen';
 import MovieScreen from './components/MovieScreen';
 import LoginPage from './components/LoginPage'
 import StaticPage from './components/StaticPage';
+import FavouritePage from './components/FavouritePage';
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
         <Routes className='content'>
           <Route path='/' element={<LandScreen />}/>
           <Route path='/home' element={<HomeScreen />}/>
-          <Route path='/home/movie' element={<MovieScreen />}/>
-          <Route path='/home/static' element={<StaticPage />}/>
+          <Route path='/movie' element={<MovieScreen />}/>
+          <Route path='/movie/:id' element={<StaticPage />}/>
+          <Route path='/favourite' element={<FavouritePage />}/>
           <Route path='/login' element={<LoginPage />}/>
 
         </Routes>

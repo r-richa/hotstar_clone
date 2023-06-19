@@ -23,11 +23,11 @@
 .staticpage .title{
     width: 45%;
 }
-.buttonlist button{
+.button{
     padding-left: 1rem;
     padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
     margin-right: 1rem;
 
 
@@ -37,7 +37,12 @@
     color: rgb(1, 8, 28);
 }
 .plus{
-    border-radius: 60%;
+    border-radius: 50%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 7px;
+    padding-left: 7px;
+    font-size: 25px;
 }
 .up{
     font-size: 13px;

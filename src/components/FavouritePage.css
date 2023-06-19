@@ -1,0 +1,14 @@
+.favourite{
+    width: 100%;
+    display: flex;
+}
+.favourite Sidebar{
+    float: left;
+}
+h1{
+    margin-left: 30px;
+}
+.movielist{
+    margin: 0;
+    width: 100%;
+}

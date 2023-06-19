@@ -2,7 +2,7 @@ import React from "react";
 import './MovieScreen.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import data from './data.json';
+import data from './movie.json';
 import Card from "./card";
 import pic1 from './pic1.jpg';
 import pic2 from './pic2.png';

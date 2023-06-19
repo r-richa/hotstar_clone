@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './LandScreen.css';
-import data from './data.json';
+import data from './movie.json';
 import backimg from './login-background.jpg';
 import upexplore from './upexplore.png';
 import downexplore from './downexplore.png';
