@@ -1,14 +1,14 @@
 import React, { useState,useEffect } from "react";
 import './StaticPage.css';
-import Sidebar from "./Sidebar";
+import Sidebar from "../components/Sidebar";
 import { useParams } from "react-router-dom";
-import data from './movie.json';
+import data from '../components/movie.json';
 
 const StaticPage = () => {
     const[movie, setMovie] = useState({});
     const{id} = useParams();
     useEffect(() => {
-        setMovie(data.filter((movie) => movie.id == id)[0])
+        setMovie(data.filter((movie) => movie.id === id)[0])
     },[]);
 
     const favourite = (movie) => {

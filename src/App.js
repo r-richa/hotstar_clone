@@ -2,12 +2,12 @@ import './App.css';
 import { BrowserRouter as Router ,Routes ,Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import HomeScreen from './components/HomeScreen';
-import LandScreen from './components/LandScreen';
-import MovieScreen from './components/MovieScreen';
-import LoginPage from './components/LoginPage'
-import StaticPage from './components/StaticPage';
-import FavouritePage from './components/FavouritePage';
+import HomeScreen from './pages/HomeScreen';
+import LandScreen from './pages/LandScreen';
+import MovieScreen from './pages/MovieScreen';
+import LoginPage from './pages/LoginPage'
+import StaticPage from './pages/StaticPage';
+import FavouritePage from './pages/FavouritePage';
 
 function App() {
   return (

@@ -1,8 +1,8 @@
 import React from "react";
 import './FavouritePage.css';
-import data from './movie.json';
-import Card from "./card";
-import Sidebar from "./Sidebar";
+import data from '../components/movie.json';
+import Card from "../components/card";
+import Sidebar from "../components/Sidebar";
 
 
 const FavouritePage = () =>{

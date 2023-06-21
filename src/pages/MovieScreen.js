@@ -2,14 +2,14 @@ import React from "react";
 import './MovieScreen.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import data from './movie.json';
-import Card from "./card";
 import pic1 from './pic1.jpg';
 import pic2 from './pic2.png';
 import pic3 from './pic3.png';
 import pic4 from './pic4.jpg';
 import pic5 from './pic5.png';
-import Sidebar from "./Sidebar";
+import data from '../components/movie.json';
+import Card from "../components/card";
+import Sidebar from "../components/Sidebar";
 
 const MovieScreen = () => {
         
@@ -54,7 +54,7 @@ const MovieScreen = () => {
             <h1>Recommended for you</h1>
                 <div className="listcard">
                     {
-                        <Card movie = {data.filter((movie) => movie.type == 'recommend')} />
+                        <Card movie = {data.filter((movie) => movie.type === 'recommend')} />
                     }
                 </div>
             </div>

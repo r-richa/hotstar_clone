@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="endtext" >
-            <p>2023 STAR. All Rights Reserved.</p>
+            <p>&copy; 2023 STAR. All Rights Reserved.</p>
             <p>Terms Of Use  Privacy Policy  FAQ</p>
             </div>
         </div>
