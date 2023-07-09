@@ -7,8 +7,9 @@ import data from '../components/movie.json';
 const StaticPage = () => {
     const[movie, setMovie] = useState({});
     const{id} = useParams();
+    const movieId = parseInt(id);
     useEffect(() => {
-        setMovie(data.filter((movie) => movie.id === id)[0])
+        setMovie(data.filter((movi) => movi.id === movieId)[0])
     },[]);
 
     const favourite = (movie) => {
@@ -24,11 +25,13 @@ const StaticPage = () => {
 
     const[active ,setActive] = useState(false);
     
-    
+    console.log(movie);
+
     return(
         <div className="staticwhole">
              <Sidebar />
         <div className="staticpage">
+
                 <img src = {movie.backgroundImg} className="bg"/>
                 <div className="over">
                     <img src ={movie.titleImg} className="title"/>
